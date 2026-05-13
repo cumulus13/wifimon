@@ -1,0 +1,18 @@
+/target
+Cargo.lock
+*.tmp
+*.log
+state.json
+.env
+lcov.info
+
+# Ignore Sublime Text project files
+*.sublime-*
+
+# Added entries (4 items)
+target/
+*.exe
+src/tmp*
+*.bak
+# PT backup directory
+.pt/
