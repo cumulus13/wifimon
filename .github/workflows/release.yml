@@ -1,13 +1,13 @@
 name: Release
 
 on:
-  push:
-    branches: ["master", "dev"]
+  # push:
+  #   branches: ["master", "dev"]
   # pull_request:
     # branches: ["master"]
-  # push:
-    # tags:
-      # - "v*.*.*"
+  push:
+    tags:
+      - "v*.*.*"
 
 permissions:
   contents: write

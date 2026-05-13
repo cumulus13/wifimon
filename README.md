@@ -1,11 +1,11 @@
 # wifimon
 
 [![CI](https://github.com/cumulus13/wifimon/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/cumulus13/wifimon/actions/workflows/ci.yml)
-[![Release](https://github.com/cumulus13/wifimon/actions/workflows/release.yml/badge.svg?branch=master)](https://github.com/cumulus13/wifimon/actions/workflows/release.yml)
+[![Release](https://github.com/cumulus13/wifimon/actions/workflows/release.yml/badge.svg)](https://github.com/cumulus13/wifimon/actions/workflows/release.yml)
 [![Crates.io](https://img.shields.io/crates/v/wifimon.svg)](https://crates.io/crates/wifimon)
 [![codecov](https://codecov.io/gh/cumulus13/wifimon/branch/master/graph/badge.svg)](https://codecov.io/gh/cumulus13/wifimon)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![License: APACHE-2](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 **Professional, robust Wi-Fi monitoring CLI with [Growl/GNTP](http://growl.info/) desktop notifications.**
 

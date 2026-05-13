@@ -1,6 +1,6 @@
 [package]
 name = "wifimon"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 authors = ["Hadi Cahyadi <cumulus13@gmail.com>"]
 description = "Professional Wi-Fi monitoring CLI with Growl/GNTP notifications"
