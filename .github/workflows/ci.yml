@@ -9,6 +9,7 @@ on:
 env:
   CARGO_TERM_COLOR: always
   RUST_BACKTRACE: 1
+  CROSS_CONTAINER_ENGINE: docker
 
 permissions:
   contents: read
@@ -101,12 +102,18 @@ jobs:
           key: ${{ matrix.target }}
       - name: Install cross
         if: ${{ matrix.use_cross }}
-        run: cargo install cross --git https://github.com/cross-rs/cross
+        run: cargo install cross --locked
+      - name: Prefetch cross image
+        if: ${{ matrix.use_cross }}
+        run: |
+          docker pull ghcr.io/cross-rs/aarch64-unknown-linux-gnu:0.2.5
       - name: Build (cargo)
         if: ${{ !matrix.use_cross }}
         run: cargo build --release --target ${{ matrix.target }}
       - name: Build (cross)
         if: ${{ matrix.use_cross }}
+        env:
+          CROSS_IMAGE: ghcr.io/cross-rs/aarch64-unknown-linux-gnu:0.2.5
         run: cross build --release --target ${{ matrix.target }}
 
   # ── Security audit ───────────────────────────────────────────────────────────
